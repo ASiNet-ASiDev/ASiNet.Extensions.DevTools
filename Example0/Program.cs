@@ -1,14 +1,13 @@
-﻿using ASiNet.Extensions.DevTools;
+﻿using ASiNet.Extensions.DevTools.Associations;
+using ASiNet.Extensions.DevTools.Associations.Enums;
 using ASiNet.Extensions.DevTools.DebugTools;
-using ASiNet.Extensions.DevTools.Enums;
-using ASiNet.Extensions.DevTools.Interfaces;
 
 IAssociation? association = null;
 
 
 using (_ = SpeedTest.New(x => Console.WriteLine($"Init time: {x.Milliseconds}ms\n{x.Ticks}t\n"), true))
 {
-    association = Associations.CreateNew("Test")
+    association = Association.CreateNew("Test")
         .Mode(AssociationMode.TwoWay)
         .AddTransient<A, B>()
         .AddTransient<A1, B1>()

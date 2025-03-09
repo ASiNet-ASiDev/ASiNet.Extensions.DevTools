@@ -1,6 +1,6 @@
-﻿using ASiNet.Extensions.DevTools.Enums;
+﻿using ASiNet.Extensions.DevTools.Associations.Enums;
 
-namespace ASiNet.Extensions.DevTools.Base;
+namespace ASiNet.Extensions.DevTools.Associations.Base;
 internal abstract class AssociationContainerBase
 {
     public AssociationContainerBase(Type first, Type second, object firstConstructor, object secondConstructor, AssociationContainerType containerType)

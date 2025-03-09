@@ -1,4 +1,4 @@
-﻿namespace ASiNet.Extensions.DevTools.Enums;
+﻿namespace ASiNet.Extensions.DevTools.Associations.Enums;
 public enum AssociationContainerType : byte
 {
     NonGenericContainer,

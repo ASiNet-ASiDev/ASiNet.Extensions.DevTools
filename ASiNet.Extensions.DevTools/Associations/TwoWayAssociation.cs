@@ -1,10 +1,9 @@
 ﻿using System.Collections.Frozen;
-using ASiNet.Extensions.DevTools.Base;
-using ASiNet.Extensions.DevTools.Enums;
+using ASiNet.Extensions.DevTools.Associations.Base;
+using ASiNet.Extensions.DevTools.Associations.Enums;
 using ASiNet.Extensions.DevTools.Exceptions;
-using ASiNet.Extensions.DevTools.Interfaces;
 
-namespace ASiNet.Extensions.DevTools;
+namespace ASiNet.Extensions.DevTools.Associations;
 public class TwoWayAssociation : IAssociation
 {
     internal TwoWayAssociation(string key, AssociationMode mode, List<AssociationContainerBase> containers)

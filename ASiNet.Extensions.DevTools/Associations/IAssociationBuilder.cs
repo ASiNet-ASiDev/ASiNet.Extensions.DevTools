@@ -1,6 +1,6 @@
-﻿using ASiNet.Extensions.DevTools.Enums;
+﻿using ASiNet.Extensions.DevTools.Associations.Enums;
 
-namespace ASiNet.Extensions.DevTools.Interfaces;
+namespace ASiNet.Extensions.DevTools.Associations;
 public interface IAssociationBuilder
 {
     public IAssociationBuilder Mode(AssociationMode mode);

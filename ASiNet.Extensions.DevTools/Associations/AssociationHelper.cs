@@ -1,9 +1,9 @@
 ﻿using System.Linq.Expressions;
 using System.Reflection;
-using ASiNet.Extensions.DevTools.Base;
+using ASiNet.Extensions.DevTools.Associations.Base;
 using ASiNet.Extensions.DevTools.Exceptions;
 
-namespace ASiNet.Extensions.DevTools;
+namespace ASiNet.Extensions.DevTools.Associations;
 internal static class AssociationHelper
 {
     public static AssociationContainerBase MakeBackGenericContainer(AssociationContainerBase instance)

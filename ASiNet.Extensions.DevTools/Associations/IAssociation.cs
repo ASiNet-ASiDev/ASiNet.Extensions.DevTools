@@ -1,7 +1,7 @@
-﻿using ASiNet.Extensions.DevTools.Enums;
+﻿using ASiNet.Extensions.DevTools.Associations.Enums;
 using ASiNet.Extensions.DevTools.Exceptions;
 
-namespace ASiNet.Extensions.DevTools.Interfaces;
+namespace ASiNet.Extensions.DevTools.Associations;
 public interface IAssociation
 {
 

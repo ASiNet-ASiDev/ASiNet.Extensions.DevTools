@@ -1,8 +1,7 @@
 ﻿using ASiNet.Extensions.DevTools.Exceptions;
-using ASiNet.Extensions.DevTools.Interfaces;
 
-namespace ASiNet.Extensions.DevTools;
-public static class Associations
+namespace ASiNet.Extensions.DevTools.Associations;
+public static class Association
 {
 
     private static Dictionary<string, IAssociation> _associations = [];
@@ -29,8 +28,6 @@ public static class Associations
     internal static void Add(IAssociation association)
     {
         if (!_associations.TryAdd(association.Key, association))
-        {
             throw new ArgumentException($"An association with such a key already exists[{association.Key}]");
-        }
     }
 }

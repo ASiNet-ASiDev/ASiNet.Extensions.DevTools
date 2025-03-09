@@ -1,8 +1,7 @@
-﻿using ASiNet.Extensions.DevTools.Base;
-using ASiNet.Extensions.DevTools.Enums;
-using ASiNet.Extensions.DevTools.Interfaces;
+﻿using ASiNet.Extensions.DevTools.Associations.Base;
+using ASiNet.Extensions.DevTools.Associations.Enums;
 
-namespace ASiNet.Extensions.DevTools;
+namespace ASiNet.Extensions.DevTools.Associations;
 public class AssociationBuilder(string key) : IAssociationBuilder
 {
 
@@ -64,7 +63,7 @@ public class AssociationBuilder(string key) : IAssociationBuilder
         {
             case AssociationMode.TwoWay:
                 var twoWauAssociation = new TwoWayAssociation(Key, _mode, _containers);
-                Associations.Add(twoWauAssociation);
+                Association.Add(twoWauAssociation);
                 return twoWauAssociation;
             case AssociationMode.OneWay:
                 throw new NotImplementedException();
